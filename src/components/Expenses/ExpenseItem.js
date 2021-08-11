@@ -6,25 +6,24 @@ import Card from "../UI/Card";
 
 const ExpenseItem = (props) => {
   return (
-<<<<<<< HEAD
-    <Card className="expense-item">
-      <ExpenseDate date={props.date} />
-      <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">${props.amount}</div>
-      </div>
-    </Card>
-=======
+    // <Card className="expense-item">
+    //   <ExpenseDate date={props.date} />
+    //   <div className="expense-item__description">
+    //     <h2>{props.title}</h2>
+    //     <div className="expense-item__price">${props.amount}</div>
+    //   </div>
+    // </Card>
+
+    //Since this is going to be child of <ul> tag, wrapping the return content in li
     <li>
       <Card className="expense-item">
         <ExpenseDate date={props.date} />
         <div className="expense-item__description">
           <h2>{props.title}</h2>
-          <div className="expense-item__price">${props.amount}</div>
+          <div className="expense-item__price">₹{props.amount}</div>
         </div>
       </Card>
     </li>
->>>>>>> 229d577fb20075a1489c39b96fd80dd3bcff53e0
   );
 };
 
